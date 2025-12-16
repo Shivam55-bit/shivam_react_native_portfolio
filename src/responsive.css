@@ -1,0 +1,819 @@
+/* ========================================
+   COMPREHENSIVE RESPONSIVE STYLES
+   Mobile-First Approach
+   Breakpoints: 480px, 768px, 1024px, 1280px
+   ======================================== */
+
+/* === ROOT RESPONSIVE VARIABLES === */
+:root {
+    /* Fluid Typography Base */
+    --font-size-base: clamp(0.875rem, 2vw, 1rem);
+    --font-size-sm: clamp(0.75rem, 1.5vw, 0.875rem);
+    --font-size-lg: clamp(1.125rem, 2.5vw, 1.25rem);
+    --font-size-xl: clamp(1.5rem, 3vw, 2rem);
+    --font-size-2xl: clamp(2rem, 4vw, 3rem);
+    --font-size-3xl: clamp(2.5rem, 5vw, 4rem);
+    
+    /* Responsive Spacing */
+    --spacing-xs: clamp(0.5rem, 2vw, 0.75rem);
+    --spacing-sm: clamp(0.75rem, 2.5vw, 1rem);
+    --spacing-md: clamp(1rem, 3vw, 1.5rem);
+    --spacing-lg: clamp(1.5rem, 4vw, 2rem);
+    --spacing-xl: clamp(2rem, 5vw, 3rem);
+    --spacing-2xl: clamp(3rem, 6vw, 4rem);
+    
+    /* Container Max Widths */
+    --container-sm: 640px;
+    --container-md: 768px;
+    --container-lg: 1024px;
+    --container-xl: 1280px;
+    --container-2xl: 1536px;
+}
+
+/* ========================================
+   MOBILE FIRST BASE STYLES (0px - 479px)
+   ======================================== */
+
+/* === NAVBAR RESPONSIVE === */
+.navbar {
+    padding: 0.75rem 1rem !important;
+}
+
+.nav-inner {
+    flex-wrap: nowrap;
+}
+
+.nav-logo {
+    font-size: clamp(1.125rem, 4vw, 1.6rem) !important;
+}
+
+.nav-center {
+    gap: 1rem;
+    margin-right: 1rem;
+}
+
+.nav-center li a {
+    font-size: clamp(0.875rem, 2vw, 1rem) !important;
+    padding: 0.25rem 0;
+}
+
+.nav-right a {
+    font-size: clamp(1.25rem, 3vw, 1.9rem) !important;
+}
+
+/* === HERO SECTION RESPONSIVE === */
+.hero-section {
+    padding: 80px 1rem 40px !important;
+    min-height: auto !important;
+}
+
+.hero-grid-container {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    padding: 0 1rem !important;
+}
+
+.hero-content-wrapper {
+    text-align: center;
+}
+
+.hero-tagline-pill {
+    font-size: clamp(0.75rem, 2vw, 1rem) !important;
+    padding: 8px 16px !important;
+}
+
+.hero-greeting {
+    font-size: clamp(1.25rem, 4vw, 1.6rem) !important;
+}
+
+.hero-main-title {
+    font-size: clamp(1.75rem, 6vw, 4.5rem) !important;
+    line-height: 1.2 !important;
+}
+
+.hero-description {
+    font-size: clamp(0.9rem, 2.5vw, 1.15rem) !important;
+    max-width: 100% !important;
+}
+
+.hero-actions-group {
+    flex-direction: column;
+    gap: 1.5rem !important;
+    align-items: center;
+}
+
+.hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem !important;
+}
+
+.hero-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 20px !important;
+    font-size: clamp(0.9rem, 2.5vw, 1.05rem) !important;
+}
+
+.hero-social-links {
+    justify-content: center;
+}
+
+.hero-image-container {
+    min-width: auto !important;
+    order: -1;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.hero-profile-pic,
+.image-background-shape {
+    width: 280px !important;
+    height: 280px !important;
+}
+
+/* === ABOUT SECTION RESPONSIVE === */
+#about {
+    padding: 3rem 1rem !important;
+}
+
+.about-content-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+}
+
+.about-header-main {
+    font-size: clamp(2rem, 6vw, 3.5rem) !important;
+}
+
+.about-description-text {
+    font-size: clamp(0.95rem, 2.5vw, 1.2rem) !important;
+}
+
+/* === SKILLS SECTION RESPONSIVE === */
+.skills {
+    padding: 3rem 1rem !important;
+}
+
+.skills-title {
+    font-size: clamp(2rem, 6vw, 3.5rem) !important;
+}
+
+.skills-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+}
+
+.skill-card {
+    padding: 1.5rem !important;
+}
+
+.skill-icon {
+    font-size: clamp(2rem, 8vw, 3rem) !important;
+}
+
+.skill-name {
+    font-size: clamp(1.125rem, 3vw, 1.5rem) !important;
+}
+
+/* === TECH STACK RESPONSIVE === */
+.techstack-section {
+    padding: 3rem 1rem !important;
+}
+
+.techstack-title {
+    font-size: clamp(2rem, 6vw, 3.5rem) !important;
+}
+
+.techstack-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+}
+
+.tech-category-card {
+    padding: 1.5rem !important;
+}
+
+.category-name {
+    font-size: clamp(1.25rem, 4vw, 1.8rem) !important;
+}
+
+/* === EXPERIENCE SECTION RESPONSIVE === */
+.experience-section {
+    padding: 3rem 1rem !important;
+}
+
+.experience-title {
+    font-size: clamp(2rem, 6vw, 3.5rem) !important;
+}
+
+.timeline::before {
+    left: 20px !important;
+}
+
+.timeline-item {
+    flex-direction: column !important;
+    padding-left: 50px !important;
+}
+
+.timeline-content {
+    width: 100% !important;
+    padding: 1.5rem !important;
+}
+
+.timeline-content::before {
+    left: -30px !important;
+    right: auto !important;
+}
+
+.timeline-marker {
+    left: 20px !important;
+    transform: translateX(0) !important;
+}
+
+.exp-role {
+    font-size: clamp(1.25rem, 4vw, 1.8rem) !important;
+}
+
+.exp-company {
+    font-size: clamp(1rem, 3vw, 1.3rem) !important;
+}
+
+/* === SERVICES SECTION RESPONSIVE === */
+.services-section {
+    padding: 3rem 1rem !important;
+}
+
+.services-title {
+    font-size: clamp(2rem, 6vw, 3.5rem) !important;
+}
+
+.services-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+}
+
+.service-card {
+    padding: 1.5rem !important;
+}
+
+.service-title-text {
+    font-size: clamp(1.25rem, 4vw, 1.8rem) !important;
+}
+
+/* === PROJECTS SECTION RESPONSIVE === */
+.projects {
+    padding: 3rem 1rem !important;
+}
+
+.projects-header-main {
+    font-size: clamp(2rem, 6vw, 3.5rem) !important;
+}
+
+.project-grid {
+    gap: 1rem !important;
+    padding: 1rem 0 !important;
+}
+
+.iphone-frame {
+    width: 260px !important;
+    height: 540px !important;
+}
+
+.project-card {
+    min-width: 260px !important;
+    max-width: 260px !important;
+}
+
+/* === CONTACT SECTION RESPONSIVE === */
+.contact-section {
+    padding: 3rem 1rem !important;
+}
+
+.contact-header-main {
+    font-size: clamp(2rem, 6vw, 3.5rem) !important;
+}
+
+.contact-card-box {
+    padding: 2rem 1.5rem !important;
+    border-radius: 1.5rem !important;
+}
+
+.contact-links-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+}
+
+.link-button {
+    font-size: clamp(0.875rem, 2vw, 1rem) !important;
+    padding: 0.875rem 1rem !important;
+}
+
+/* === FOOTER RESPONSIVE === */
+.footer {
+    padding: 2rem 1rem !important;
+}
+
+.footer-top {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    text-align: center !important;
+}
+
+.footer-logo {
+    font-size: clamp(1.25rem, 4vw, 1.8rem) !important;
+}
+
+.footer-bottom {
+    flex-direction: column !important;
+    gap: 1rem !important;
+}
+
+/* ========================================
+   SMALL MOBILE (min-width: 480px)
+   ======================================== */
+@media (min-width: 480px) {
+    .hero-profile-pic,
+    .image-background-shape {
+        width: 320px !important;
+        height: 320px !important;
+    }
+
+    .hero-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .hero-btn {
+        width: auto;
+    }
+
+    .iphone-frame {
+        width: 300px !important;
+        height: 580px !important;
+    }
+
+    .project-card {
+        min-width: 300px !important;
+        max-width: 300px !important;
+    }
+}
+
+/* ========================================
+   TABLET (min-width: 768px)
+   ======================================== */
+@media (min-width: 768px) {
+    /* Navbar */
+    .navbar {
+        padding: 1rem 2rem !important;
+    }
+
+    .nav-center {
+        gap: 2rem;
+    }
+
+    /* Hero */
+    .hero-section {
+        padding: 100px 2rem 60px !important;
+        min-height: 100vh !important;
+    }
+
+    .hero-grid-container {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 3rem !important;
+        padding: 0 2rem !important;
+    }
+
+    .hero-content-wrapper {
+        text-align: left;
+    }
+
+    .hero-image-container {
+        order: 0;
+        max-width: none;
+    }
+
+    .hero-profile-pic,
+    .image-background-shape {
+        width: 350px !important;
+        height: 350px !important;
+    }
+
+    .hero-actions-group {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hero-buttons {
+        flex-direction: row;
+        width: auto;
+    }
+
+    /* About */
+    #about {
+        padding: 4rem 2rem !important;
+    }
+
+    .about-content-grid {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 3rem !important;
+    }
+
+    /* Skills */
+    .skills {
+        padding: 4rem 2rem !important;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 2rem !important;
+    }
+
+    /* Tech Stack */
+    .techstack-section {
+        padding: 4rem 2rem !important;
+    }
+
+    .techstack-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 2rem !important;
+    }
+
+    /* Experience */
+    .experience-section {
+        padding: 4rem 2rem !important;
+    }
+
+    .timeline::before {
+        left: 50% !important;
+        transform: translateX(-50%);
+    }
+
+    .timeline-item {
+        padding-left: 0 !important;
+    }
+
+    .timeline-item:nth-child(odd) {
+        flex-direction: row !important;
+    }
+
+    .timeline-item:nth-child(even) {
+        flex-direction: row-reverse !important;
+    }
+
+    .timeline-content {
+        width: calc(50% - 40px) !important;
+        padding: 2rem !important;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content::before {
+        right: -30px !important;
+        left: auto !important;
+    }
+
+    .timeline-item:nth-child(even) .timeline-content::before {
+        left: -30px !important;
+    }
+
+    .timeline-marker {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+
+    /* Services */
+    .services-section {
+        padding: 4rem 2rem !important;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 2rem !important;
+    }
+
+    /* Projects */
+    .projects {
+        padding: 4rem 2rem !important;
+    }
+
+    .iphone-frame {
+        width: 350px !important;
+        height: 660px !important;
+    }
+
+    .project-card {
+        min-width: 350px !important;
+        max-width: 350px !important;
+    }
+
+    /* Contact */
+    .contact-section {
+        padding: 5rem 2rem !important;
+    }
+
+    .contact-card-box {
+        padding: 3rem 2.5rem !important;
+    }
+
+    .contact-links-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 3rem 2rem !important;
+    }
+
+    .footer-top {
+        grid-template-columns: repeat(3, 1fr) !important;
+        text-align: left !important;
+    }
+
+    .footer-bottom {
+        flex-direction: row !important;
+        justify-content: space-between;
+    }
+}
+
+/* ========================================
+   LAPTOP (min-width: 1024px)
+   ======================================== */
+@media (min-width: 1024px) {
+    /* Navbar */
+    .navbar {
+        padding: 1.2rem 2rem !important;
+    }
+
+    .nav-center {
+        gap: 2.5rem;
+    }
+
+    /* Hero */
+    .hero-grid-container {
+        grid-template-columns: 1.3fr 1fr !important;
+        gap: 4rem !important;
+    }
+
+    .hero-profile-pic,
+    .image-background-shape {
+        width: 380px !important;
+        height: 380px !important;
+    }
+
+    /* About */
+    #about {
+        padding: 5rem 2rem !important;
+    }
+
+    /* Skills */
+    .skills {
+        padding: 5rem 2rem !important;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 2.5rem !important;
+    }
+
+    /* Tech Stack */
+    .techstack-section {
+        padding: 5rem 2rem !important;
+    }
+
+    /* Experience */
+    .experience-section {
+        padding: 5rem 2rem !important;
+    }
+
+    .timeline-content {
+        padding: 2.5rem !important;
+    }
+
+    /* Services */
+    .services-section {
+        padding: 5rem 2rem !important;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 2.5rem !important;
+    }
+
+    /* Projects */
+    .projects {
+        padding: 5rem 2rem !important;
+    }
+
+    .project-grid {
+        gap: 1.5rem !important;
+    }
+
+    /* Contact */
+    .contact-section {
+        padding: 6rem 2rem !important;
+    }
+}
+
+/* ========================================
+   LARGE DESKTOP (min-width: 1280px)
+   ======================================== */
+@media (min-width: 1280px) {
+    /* Hero */
+    .hero-grid-container {
+        gap: 5rem !important;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    /* Skills */
+    .skills-grid {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+
+    /* Projects */
+    .iphone-frame {
+        width: 400px !important;
+        height: 720px !important;
+    }
+
+    .project-card {
+        min-width: 400px !important;
+        max-width: 400px !important;
+    }
+
+    .project-grid {
+        gap: 2rem !important;
+    }
+}
+
+/* ========================================
+   EXTRA LARGE DESKTOP (min-width: 1536px)
+   ======================================== */
+@media (min-width: 1536px) {
+    .hero-grid-container,
+    .about-container,
+    .skills-container,
+    .techstack-container,
+    .experience-container,
+    .services-container,
+    .projects .container,
+    .contact-container {
+        max-width: 1536px;
+        margin: 0 auto;
+    }
+
+    .iphone-frame {
+        width: 440px !important;
+        height: 780px !important;
+    }
+
+    .project-card {
+        min-width: 440px !important;
+        max-width: 440px !important;
+    }
+}
+
+/* ========================================
+   MOBILE HAMBURGER MENU
+   ======================================== */
+@media (max-width: 767px) {
+    .nav-center {
+        position: fixed;
+        top: 60px;
+        right: 0;
+        background: linear-gradient(180deg, rgba(26, 26, 46, 0.98), rgba(13, 12, 29, 0.98));
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        width: 280px;
+        padding: 1.5rem 0;
+        gap: 0 !important;
+        border-radius: 0 0 0 20px;
+        transform: translateX(100%);
+        transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        box-shadow: -10px 10px 40px rgba(0, 0, 0, 0.7);
+        border-left: 2px solid rgba(97, 218, 251, 0.2);
+        border-bottom: 2px solid rgba(97, 218, 251, 0.2);
+        margin-right: 0 !important;
+    }
+
+    .nav-center li {
+        width: 100%;
+    }
+
+    .nav-center li a {
+        display: block;
+        width: 100%;
+        padding: 1rem 2rem !important;
+        border-left: 3px solid transparent;
+        transition: all 0.3s ease;
+    }
+
+    .nav-center li a:hover {
+        border-left: 3px solid #61dafb;
+        background: rgba(97, 218, 251, 0.1);
+    }
+
+    .nav-center.open {
+        transform: translateX(0);
+    }
+
+    .hamburger {
+        display: flex !important;
+    }
+
+    .nav-right {
+        display: none !important;
+    }
+}
+
+/* ========================================
+   UTILITY RESPONSIVE CLASSES
+   ======================================== */
+
+/* Hide on mobile */
+@media (max-width: 767px) {
+    .hide-mobile {
+        display: none !important;
+    }
+}
+
+/* Hide on tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .hide-tablet {
+        display: none !important;
+    }
+}
+
+/* Hide on desktop */
+@media (min-width: 1024px) {
+    .hide-desktop {
+        display: none !important;
+    }
+}
+
+/* Responsive text alignment */
+.text-center-mobile {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .text-center-mobile {
+        text-align: left;
+    }
+}
+
+/* Responsive containers */
+.container-fluid {
+    width: 100%;
+    padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+    .container-fluid {
+        padding: 0 2rem;
+    }
+}
+
+/* ========================================
+   PERFORMANCE OPTIMIZATIONS
+   ======================================== */
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    :root {
+        --color-primary: #00d4ff;
+        --color-secondary: #00ff99;
+    }
+}
+
+/* Dark mode adjustments (if browser supports) */
+@media (prefers-color-scheme: dark) {
+    /* Already dark by default, but add any specific adjustments here */
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    .footer,
+    .hero-social-links,
+    .hamburger {
+        display: none !important;
+    }
+
+    body {
+        background: white !important;
+        color: black !important;
+    }
+}

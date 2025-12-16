@@ -2,10 +2,13 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Skills from "./components/Skills";
+import TechStack from "./components/TechStack";
+import Experience from "./components/Experience";
+import Services from "./components/Services";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Skills from "./components/Skills";
 import './App.css';
 
 
@@ -16,7 +19,10 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <Skills/>
+      <Skills />
+      <TechStack />
+      <Experience />
+      <Services />
       <Projects />
       <Contact />
       <Footer />
