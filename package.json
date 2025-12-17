@@ -3,6 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "description": "Portfolio built with Vite + React",
+  "keywords": ["vite", "react", "portfolio"],
   "engines": {
     "node": ">=18.0.0",
     "npm": ">=8.0.0"
